@@ -21,8 +21,6 @@ from ldm.models.seg_module import Segmodule
 
 import numpy as np
 
-os.environ["CUDA_VISIBLE_DEVICES"] = "1"
-
 def chunk(it, size):
     it = iter(it)
     return iter(lambda: tuple(islice(it, size)), ())
